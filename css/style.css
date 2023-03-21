@@ -10,37 +10,29 @@ body {
     font-family: 'Bebas Neue', cursive;
 }
 
-header {
-    background-color: rgb(255, 255, 255);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: sticky;
-    top: 0;
+.container-fluid {
+    background: rgb(255, 255, 255);
+    font-size: 40px;
 }
 
-.logo img {
-    width: 230px;
-    margin: 15px 20px;
+a.navbar-brand img {
+    width: 250px;
+}
+.navbar {
+    --bs-navbar-padding-x: 0;
+    --bs-navbar-padding-y: 0;
 }
 
-
-nav ul {
-    display: flex;
-    justify-content: space-between;
+ul.navbar-nav a {
+    margin: 20px;
+}
+a.nav-link {
+    color: rgb(189 126 207);
 }
 
-ul li {
-    display: flex;
-    justify-content: space-between;
-    list-style: none;
-}
-
-ul li a {
-    color:rgb(238 88 148);
-    font-size: 28px;
-    text-decoration: none;
-    padding: 0px 20px;
+.navbar-expand-lg .navbar-collapse {
+    flex-grow: initial;
+    justify-content: flex-end;
 }
 
 footer {
@@ -58,7 +50,17 @@ footer {
     padding: 20px 
 }
 
+ul.pie {
+    margin-bottom: 0;
+    list-style: none;
+    font-size: 35px;
+}
 
+ul.pie a {
+    padding: 10px;
+    text-decoration: none;
+    color: #bd7ecf;
+}
 
 /*index*/
 
@@ -72,11 +74,11 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 20px 100px;
+    margin: 20px 50px;
 }
 
 .home_text h1 {
-    font-size: 115px;
+    font-size: 100px;
 }
 
 .home_text p {
@@ -90,7 +92,7 @@ footer {
 .article_main {
     display: flex;
     align-items: center;
-    margin: 60px 25px;
+    margin: 60px 50px;
 }
 
 .article_main img {
@@ -108,12 +110,69 @@ footer {
 }
 
 
+
+/*tour*/
+
+.tour_presentation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 60px 50px;
+}
+
+.tour_presentation h1 {
+    font-size: 100px;
+}
+
+.tour_presentation h3 {
+    font-size: 50px;
+}
+
+.tour_presentation p {
+    font-size: 30px;
+}
+
+.tour_title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tour_title p {
+    margin: 10px;
+}
+
+.row.row-cols-1.row-cols-md-3.mb-3.text-center {
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin: 50px;
+    color: #673ab7;
+}
+
+.col {
+    width: 28.333333%;
+} 
+
+.card-header.py-3 {
+    background: #7e84cf;
+}
+
+
 /*galeria*/
 
 .gallery_text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 60px 50px;
+}
+
+.gallery_text h1 {
+    font-size: 100px;
+}
+
+.gallery_text h3 {
     font-size: 50px;
-    text-align: center;
-    margin: 10px 0;
 }
 
 .gallery_img {
@@ -124,7 +183,7 @@ footer {
 }
 
 .gallery_img img {
-    width: 300px;
+    width: 370px;
     height: auto;
     padding: 20px;
 }
@@ -134,9 +193,19 @@ footer {
 /*discografia*/
 
 .discografia_text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 60px 50px;
+}
+
+
+.discografia_text h1 {
+    font-size: 100px;
+}
+
+.discografia_text h3 {
     font-size: 50px;
-    text-align: center;
-    padding: 50px;
 }
 
 .first_album {
@@ -146,15 +215,17 @@ footer {
     justify-content: space-around;
 }
 
-.first_album h2 {
+.first_album h3 {
     font-size: 50px;
 }
 
 .first_album p {
-    font-size: 25px;
+    font-size: 30px;
 }
 
 .first_album iframe {
+    width: 33%;
+    height: 600px;
     padding: 50px;
 }
 
@@ -165,15 +236,17 @@ footer {
     justify-content: space-around;
 }
 
-.second_album h2 {
+.second_album h3 {
     font-size: 50px;
 }
 
 .second_album p {
-    font-size: 25px;
+    font-size: 30px;
 }
 
 .second_album iframe {
+    width: 33%;
+    height: 600px;
     padding: 50px;
 }
 
@@ -184,30 +257,36 @@ footer {
     justify-content: space-around;
 }
 
-.third_album h2 {
+.third_album h3 {
     font-size: 50px;
 }
 
 .third_album p {
-    font-size: 25px;
+    font-size: 30px;
 }
 
 .third_album iframe {
+    width: 33%;
+    height: 600px;
     padding: 50px;
 }
-
 
 
 /*contacto*/
 
 .contacto {
-    font-size: 50px;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin: 60px 50px;
 }
 
-.contacto p {
-    font-size: 40px;
+.contacto h1 {
+    font-size: 100px;
+}
+
+.contacto h3 {
+    font-size: 50px;
 }
 
 .form_area {
@@ -218,13 +297,17 @@ footer {
     padding: 1.9em;
 }
 
-.msg_area {
+.msg_area-1 {
     display: flex;
     flex-direction: column;
     order: 2;
 }
 
-.msg_area > textarea {
+.msg_area-2 {
+    display: none;
+}
+
+.msg_area-1 > textarea {
     flex: 1;
     min-width: 18em;
     background: #fff;
@@ -233,6 +316,14 @@ footer {
     margin: 15px;
 }
 
+.msg_area-2 > textarea {
+    flex: 1;
+    min-width: 18em;
+    background: #fff;
+    color: #000000;
+    padding: 15px;
+    margin: 15px;
+}
 .details-area {
     flex: 1;
     order: 1;
@@ -261,6 +352,7 @@ footer {
 }
 
 label {
+    font-size: 30px;
     color: #fff;
     text-transform: uppercase;
     line-height: 10px;
@@ -271,19 +363,10 @@ label {
 /*media queries*/ 
 
 /*mobile*/
+
 @media only screen and (max-width: 576px) {
-/*estilos generales*/
-    header {
-        flex-direction: column;
-    }
 
-    .menu-nav {
-        padding: 10px 0px;
-    }
-
-    .logo img {
-       margin: 5px 0;
-    }
+    /*estilos generales*/
 
 /*index*/
 
@@ -316,6 +399,20 @@ label {
         padding: 10px 0;
     }
 
+/*funciones*/
+    .tour_title {
+        align-items: end;
+        margin: 15px 50px;
+    }
+
+    .row.row-cols-1.row-cols-md-3.mb-3.text-center {
+        flex-direction: column;
+    }
+
+    .col {
+        width: 100%;
+    }
+
 /*galeria*/
     .gallery_img {
         grid-template-columns: repeat(2 , 1fr);
@@ -325,6 +422,51 @@ label {
     }
 
     .gallery_img img {
-        width: 245px;
+        width: 275px;
+    }
+
+/*discografia*/
+    .first_album {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .first_album iframe {
+        width: 100%;
+        height: 500px;
+    }
+    
+    .second_album {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .second_album iframe {
+        width: 100%;
+        height: 500px;
+    }
+
+    .third_album {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .third_album iframe {
+        width: 100%;
+        height: 500px;
+    }
+
+
+/*contacto*/
+    .form_area {
+        flex-direction: column;
+    }
+
+    .msg_area-1 {
+        display: none;
+    }
+
+    .msg_area-2 {
+        display: inline-block;
     }
 }
