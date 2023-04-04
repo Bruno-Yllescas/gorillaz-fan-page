@@ -1,0 +1,43 @@
+/*discografia con sass*/
+
+.discografia {
+    .discografia_text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 60px 50px;
+    }
+    .first_album {
+        display: flex;
+        padding: 24px 35px;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        iframe {
+            width: 33%;
+            height: 600px;
+            padding: 50px;
+        }
+    }
+    .second_album {
+        display: flex;
+        padding: 24px 35px;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        iframe {
+            width: 33%;
+            height: 600px;
+            padding: 50px;
+        }
+    }
+    .third_album {
+        display: flex;
+        padding: 24px 35px;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        iframe {
+            width: 33%;
+            height: 600px;
+            padding: 50px;
+        }
+    }
+}

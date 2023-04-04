@@ -5,15 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/style.css">
     <title>Gorillaz</title>
-
+    <meta name="description" content="Fan-page de la banda virtual mas grande y famosa. Animate a adentrarte a su fantastico mundo">
+    <meta name="keywords" content="gorillaz, 2D, murdoc, noodle, russel, hong studio, demon day, plastic beach">
+    <link rel="stylesheet" href="../sass/estilos.css">
 </head>
 <body>
     <header>
         <nav class="navbar navbar-expand-lg" data-bs-theme="bright">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#"><img src="./images/logo.png"></a>
+                <a class="navbar-brand" href="#"><img src="./images/logo-min.png" alt="logotipo"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
                 </button>
@@ -43,31 +44,40 @@
     <main>
         <section class="home">
             <div class="home_text">
-                <h1 class="title">Gorillaz</h1>
-                <p class="txt">Gorillaz es una banda virtual inglesa creada en 1998 por Damon Albarn y Jamie Hewlett. La banda está compuesta por cuatro miembros ficticios: 2-D, Noodle, Murdoc Niccals y Russel Hobbs. La mayoría de sus canciones junto con todo su universo ficticio, se presentan a través de vídeos musicales animados, de animación tradicional y animación por computadora, entrevistas y pequeños cortos animados. En la realidad, Albarn es el único miembro permanente de la banda.</p>
+                <h1>Gorillaz</h1>
+                <p>Gorillaz es una banda virtual inglesa creada en 1998 por Damon Albarn y Jamie Hewlett. La banda está compuesta por cuatro miembros ficticios: 2-D, Noodle, Murdoc Niccals y Russel Hobbs. La mayoría de sus canciones junto con todo su universo ficticio, se presentan a través de vídeos musicales animados, de animación tradicional y animación por computadora, entrevistas y pequeños cortos animados. En la realidad, Albarn es el único miembro permanente de la banda.</p>
             </div>
-            <div class="home_img">
-                <img src="./images/home-01.png" alt="banda">
-            </div>
+            <img class="home_img" src="./images/home-01-min.png" alt="integrantes de la banda">
         </section> 
         <section>
             <article class="article_main">
-                <img src="./images/home-03.png" alt="">
+                <img src="./images/home-02-min.png" alt="logotipo nuevo disco">
                 <p>La idea de crear la banda surgió mientras Hewlett y Albarn veían la MTV. En una entrevista se comentó: "Si tú miras la MTV demasiado tiempo terminas diciendo «¿Qué demonios? Aquí no hay nada sustancial.», así que tuvimos la idea de una banda de animación, algo que sería como una opinión sobre este tema.<br>                
                 La banda inicialmente se identificó como "Gorillaz" y el primer tema que grabaron fue "Ghost Train", el cual fue posteriormente lanzado como una cara B de su sencillo "Rock the House" y como parte del compilado de caras B, G-Sides. Los músicos detrás de la primera encarnación de Gorillaz incluían a Albarn, Del the Funky Homosapien, Dan the Automator y Kid Koala, quienes trabajaron previamente juntos en la canción "Time Keeps on Slipping" para el disco debut de Deltron 3030.</p>
             </article>
         </section>
+        <section>
+            <div class="presentation">
+                <h3>Pero...¿Quienes son?</h3>
+                <p>Conoce mas datos de las bandas a traves de estos espectaculares videos hecho por otros fan de la banda</p>
+            </div>
+        </section>
         <section class="video_container">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/QC0W0StlXmg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/jIpePxfyVVo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/QC0W0StlXmg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/jIpePxfyVVo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
 
         </section>
     </main>
     <footer>
+        <div class="legales">
+            <p>Página sin fines de lucro ni comerciales</p>
+            <p>Copyright Bruno Yllescas ©</p>
+        </div>    
         <ul class="pie">
             <li><a href="https://open.spotify.com/artist/3AA28KZvwAUcZuOKwyblJQ?si=5bdYYp1iToGaTNZB8sjagA&nd=1" target="_blank">Spotify</a></li>
             <li><a href="https://www.instagram.com/gorillaz/?hl=es" target="_blank">instagram</a></li>
             <li><a href="https://twitter.com/gorillaz" target="_blank">twitter</a></li>
+            <li> <a href="https://www.youtube.com/@Gorillaz" target="_blank">youtube</a></li>
         </ul>    
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
