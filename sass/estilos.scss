@@ -31,11 +31,13 @@ body {
     h1 {
         font-family: 'Alfa Slab One', cursive;
         font-size: 100px;
+        text-align: center;
     }
     h3 {
         font-family: 'Alfa Slab One', cursive;
-         font-size: 45px;
+        font-size: 45px;
         line-height: 65px;
+        text-align: center;
     }
     p {
         font-family: 'Bebas Neue', cursive;
@@ -146,13 +148,14 @@ footer {
     }
 }
 
-/*index*/
 
+
+/*index*/
 
 main {
     .home {
         .home_text {
-            margin: 15px 50px;
+            margin: 15px 40px;
             p {
                 font-size: 40px;
             }
@@ -164,7 +167,7 @@ main {
     .article_main {
         flex-direction: column;
         align-items: center;
-        margin: 15px 50px;
+        margin: 15px 40px;
         p {
             font-size: 40px;
         }
@@ -172,6 +175,9 @@ main {
             width: 450px;
             padding-top: 10px;
         }
+    }
+    .presentation {
+        margin: 35px;
     }
     .video_container {
         flex-direction: column;
@@ -186,12 +192,22 @@ main {
 
 
 /*funciones*/
-   
 
-.tour_title {
-        align-items: end;
-        margin: 15px 50px;
+.carousel {
+    .slide {
+        .carousel-inner {
+            width: 500px;
+            height: 250px;
+        }
     }
+}
+
+.tour_presentation {
+    margin: 20px;
+    .tour_title {
+        margin: 10px;
+    }
+}
 
 .row.row-cols-1.row-cols-md-3.mb-3.text-center {
     flex-direction: column;
@@ -201,8 +217,6 @@ main {
 }
 
     
-
-
 
 /*galeria*/
 .gallery {
@@ -216,6 +230,8 @@ main {
         }
     }
 }
+
+
 
 /*discografia*/
 
@@ -231,7 +247,7 @@ main {
         align-items: center;
         iframe {
             width: 100%;
-            height: 450px;
+            height: 340px;
         }
     }
     
@@ -240,7 +256,7 @@ main {
         align-items: center;
         iframe {
             width: 100%;
-            height: 450px;
+            height: 340px;
         }
     }
     
@@ -249,11 +265,10 @@ main {
         align-items: center;
         iframe {
             width: 100%;
-            height: 450px;
+            height: 340px;
         }
     }
 }
-
 
 
 

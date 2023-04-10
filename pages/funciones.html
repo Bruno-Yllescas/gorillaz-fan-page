@@ -43,16 +43,46 @@
         </section>
     </header>
     <main>
-        <section class="tour_presentation">
-            <div class="tour_title">
-              <h1>Festival Gorillaz</h1>
-              <h3>Una semana unica a pura música, show y diversión</h3>
-              <p>Gorillaz viene por unica a vez a la Argentina a ofrecer toda una semana de presentaciones de bandas invitadas junto a ellos. Ademas podras disfrutar de la gran variedad gastronomica de los distintos stand y foodtracks en nuestra feria gastronomica</p>
-              <h3>Conoce y accede a nuestros distintos pases de acceso a este evento increible a puro rock!</h3>
+        <div class="carousel">
+          <h1>Festival Gorillaz</h1>
+          <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="../images/carrousel_01.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="../images/carrousel_02.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="../images/carrousel_03.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+        <section class="tour_presentation">
+          <div class="tour_title">
+            <h3 class="tour_title_text">Una semana unica a pura música, show y diversión</h3>
+            <p>Gorillaz viene por única a vez a la Argentina a ofrecer toda una semana de presentaciones de bandas invitadas junto a ellos. Además podrás disfrutar de la gran variedad comidas de los distintos stand y foodtracks en nuestra feria gastronómica</p>
+            <h3>Conoce y accede a nuestros distintos pases de acceso a este evento increible a puro rock!</h3>
+          </div>
         </section>        
         <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
-            <div class="col">
+            <div class="col col_01">
+              <h3>2D ACCESS</h3>
+              <p>Con el 2D ACCESS podrás tener acceso a la feria gastronómica y el predio de los recitales, y 1 consumición gratuita presentando tu entrada</p>
               <div class="card mb-4 rounded-3 shadow-sm">
                 <div class="card-header py-3">
                   <h4 class="my-0 fw-normal">2D</h4>
@@ -60,16 +90,18 @@
                 <div class="card-body">
                   <h1 class="card-title pricing-card-title">$5000<small class="text-muted fw-light"></small></h1>
                   <ul class="list-unstyled mt-3 mb-4">
-                    <li>Acceso a todo el predio</li>
+                    <li>INGRESO A 1 DÍA</li>
                     <li></li>
-                    <li>1 consumicion gratis</li>
-                    <li>Acceso a 1 día</li>
+                    <li>1 CONSUMICIÓN GRATIS</li>
+                    <li>ACCESO A LA FERIA GASTRONÓMICA + PREDIO DE RECITALES</li>
                   </ul>
                   <button type="button" class="w-100 btn btn-lg btn-primary">TICKET</button>
                 </div>
               </div>
             </div>
-            <div class="col">
+            <div class="col col_02">
+              <h3>NOODLE ACCESS</h3>
+              <p>Con el NOODLE ACCESS podrás ingresar 3 días, 3 consumiciones gratuitas. Ademas de acceder a la feria gastronómica y el predio de los recitales, tendras total acceso a los distintos sectores de juegos proporcionado por nuestro auspiciantes</p>
               <div class="card mb-4 rounded-3 shadow-sm">
                 <div class="card-header py-3">
                   <h4 class="my-0 fw-normal">NOODLE</h4>
@@ -77,16 +109,18 @@
                 <div class="card-body">
                   <h1 class="card-title pricing-card-title">$10000<small class="text-muted fw-light"></small></h1>
                   <ul class="list-unstyled mt-3 mb-4">
-                    <li>acceso a todo el predio</li>
-                    <li>3 consumiciones gratis</li>
+                    <li>INGRESO A 3 DíAS</li>
+                    <li>3 CONSUMICIONES GRATUITAS</li>
                     <li></li>
-                    <li>acceso a 3 días</li>
+                    <li>ACCESO A FERIA GASTRONÓMICA + PREDIO RECITALES + SALONES DE JUEGOS</li>
                   </ul>
                   <button type="button" class="w-100 btn btn-lg btn-primary">TICKET</button>
                 </div>
               </div>
             </div>
-            <div class="col">
+            <div class="col col_03">
+              <h3>MURDOC ACCESS</h3>
+              <p>Con el MURDOC ACCESS podrás tener una semana completa de acceso a todos los sectores del festival sumando el salón VIP, consumiciones libres  y gratuitas, y poder conocer a los distintos artistas y a los mismos integrantes de Gorillaz</p>
               <div class="card mb-4 rounded-3 shadow-sm">
                 <div class="card-header py-3">
                   <h4 class="my-0 fw-normal">MURDOC</h4>
@@ -94,9 +128,9 @@
                 <div class="card-body">
                   <h1 class="card-title pricing-card-title">$15000<small class="text-muted fw-light"></small></h1>
                   <ul class="list-unstyled mt-3 mb-4">
-                    <li>Acceso a todo el predio + meet & greet</li>
-                    <li>Consumicion libre</li>
-                    <li>Acceso a los 7 dias de festival</li>
+                    <li>INGRESO A LA SEMANA COMPLETA</li>
+                    <li>CONSUMICIÓN LIBRE</li>
+                    <li>ACCESO A FERIA GASTRONÓMICA + PREDIO RECITALES + SALON VIP + MEET & GREET</li>
                   </ul>
                   <button type="button" class="w-100 btn btn-lg btn-primary">TICKET</button>
                 </div>

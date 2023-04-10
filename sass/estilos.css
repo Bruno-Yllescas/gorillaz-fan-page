@@ -38,7 +38,9 @@ main .presentation {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 15px 50px;
+  margin: 25px;
+  padding-top: 10px;
+  border-top: 2px solid rgb(206, 159, 221);
 }
 main .video_container {
   display: flex;
@@ -47,6 +49,21 @@ main .video_container {
 }
 
 /*funciones con sass*/
+.carousel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 25px;
+}
+.carousel .slide {
+  display: flex;
+  justify-content: center;
+}
+.carousel .slide .carousel-inner {
+  width: 98%;
+  height: 550px;
+}
+
 .tour_presentation {
   display: flex;
   flex-direction: column;
@@ -57,25 +74,36 @@ main .video_container {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 10px;
+}
+.tour_presentation .tour_title .tour_title_text {
+  padding: 40px;
+  border: 2px solid rgb(206, 159, 221);
 }
 .tour_presentation .tour_title p {
   margin: 30px 10px;
 }
 
 .row.row-cols-1.row-cols-md-3.mb-3.text-center {
-  flex-wrap: nowrap;
-  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin: 50px;
-  color: rgb(103, 58, 183);
 }
 .row.row-cols-1.row-cols-md-3.mb-3.text-center h1 {
   font-size: 70px;
 }
 .row.row-cols-1.row-cols-md-3.mb-3.text-center .col {
-  width: 34.333333%;
+  width: 85%;
+  margin: 30px 0px;
+  padding-top: 30px;
+  border-top: 2px solid rgba(230, 207, 241, 0.822);
 }
 .row.row-cols-1.row-cols-md-3.mb-3.text-center .col .card-header.py-3 {
-  background: rgb(126, 132, 207);
+  background: rgb(134, 126, 207);
+}
+.row.row-cols-1.row-cols-md-3.mb-3.text-center .col .card-body {
+  color: rgb(103, 58, 183);
 }
 
 /*galeria con sass*/
@@ -221,11 +249,13 @@ body {
 body h1 {
   font-family: "Alfa Slab One", cursive;
   font-size: 100px;
+  text-align: center;
 }
 body h3 {
   font-family: "Alfa Slab One", cursive;
   font-size: 45px;
   line-height: 65px;
+  text-align: center;
 }
 body p {
   font-family: "Bebas Neue", cursive;
@@ -323,7 +353,7 @@ footer .pie li a:hover {
   }
   /*index*/
   main .home .home_text {
-    margin: 15px 50px;
+    margin: 15px 40px;
   }
   main .home .home_text p {
     font-size: 40px;
@@ -334,7 +364,7 @@ footer .pie li a:hover {
   main .article_main {
     flex-direction: column;
     align-items: center;
-    margin: 15px 50px;
+    margin: 15px 40px;
   }
   main .article_main p {
     font-size: 40px;
@@ -342,6 +372,9 @@ footer .pie li a:hover {
   main .article_main img {
     width: 450px;
     padding-top: 10px;
+  }
+  main .presentation {
+    margin: 35px;
   }
   main .video_container {
     flex-direction: column;
@@ -352,9 +385,15 @@ footer .pie li a:hover {
     padding: 10px 0;
   }
   /*funciones*/
-  .tour_title {
-    align-items: end;
-    margin: 15px 50px;
+  .carousel .slide .carousel-inner {
+    width: 500px;
+    height: 250px;
+  }
+  .tour_presentation {
+    margin: 20px;
+  }
+  .tour_presentation .tour_title {
+    margin: 10px;
   }
   .row.row-cols-1.row-cols-md-3.mb-3.text-center {
     flex-direction: column;
@@ -385,7 +424,7 @@ footer .pie li a:hover {
   }
   .discografia .first_album iframe {
     width: 100%;
-    height: 450px;
+    height: 340px;
   }
   .discografia .second_album {
     flex-direction: column;
@@ -393,7 +432,7 @@ footer .pie li a:hover {
   }
   .discografia .second_album iframe {
     width: 100%;
-    height: 450px;
+    height: 340px;
   }
   .discografia .third_album {
     flex-direction: column;
@@ -401,7 +440,7 @@ footer .pie li a:hover {
   }
   .discografia .third_album iframe {
     width: 100%;
-    height: 450px;
+    height: 340px;
   }
   /*contacto*/
   .form_area {
