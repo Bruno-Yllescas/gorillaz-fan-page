@@ -24,7 +24,7 @@ main {
         100% {
             transform: scale(1);
         }
-    }
+    }animate__backInUp
 
     .article_main {
         display: flex;
@@ -39,7 +39,9 @@ main {
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin: 15px 50px;
+        margin: 25px;
+        padding-top: 10px;
+        border-top: 2px solid rgb(206, 159, 221);
     }
     .video_container {
         display: flex;
