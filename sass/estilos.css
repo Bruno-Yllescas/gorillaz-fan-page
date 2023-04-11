@@ -25,12 +25,12 @@ main .home .home_img {
     transform: scale(1);
   }
 }
-main .article_main {
+main animate__backInUp .article_main {
   display: flex;
   align-items: center;
   margin: 30px 50px;
 }
-main .article_main img {
+main animate__backInUp .article_main img {
   width: 400px;
   padding: 40px;
 }
@@ -104,6 +104,12 @@ main .video_container {
 }
 .row.row-cols-1.row-cols-md-3.mb-3.text-center .col .card-body {
   color: rgb(103, 58, 183);
+}
+.row.row-cols-1.row-cols-md-3.mb-3.text-center .col .card-body .btn-primary {
+  --bs-btn-bg: rgb(137, 72, 72);
+}
+.row.row-cols-1.row-cols-md-3.mb-3.text-center .col .card-body .btn-primary:hover {
+  background: rgb(209, 47, 47);
 }
 
 /*galeria con sass*/

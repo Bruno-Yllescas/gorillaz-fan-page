@@ -54,11 +54,12 @@
         }
         .card-body {
             color: rgb(103, 58, 183);
+            .btn-primary {
+                --bs-btn-bg: rgb(137, 72, 72);
+                &:hover {
+                    background: rgb(209, 47, 47);
+                }
+            }
         }
     }
 }
-
- 
-
-
-
