@@ -1,151 +1,282 @@
+/*imports de las distintas secciones de la web*/
+
 @import "index";
+
 @import "funciones";
+
 @import "galeria";
+
 @import "discografia";
+
 @import "contacto";
 
 
 
 /*variables*/
+
 $gradientBackground: linear-gradient(180deg, rgba(189,126,207,1) 50%, rgba(207,155,126,1) 100%);
+
 $rosaGorillaz: rgb(189 126 207);
-$letraTexto: rgb(228, 218, 206);
+
+$aquaTitulo: aqua;
+
+$encabezadoCeleste: rgb(162 247 247);
+
+$letraTexto: rgb(37, 36, 35);
 
 
 
 /*estilos generales*/
 
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
 @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bebas+Neue&display=swap');
+
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rakkas&display=swap');
 
 
 
 * {
+    
     padding: 0;
+    
     margin: 0;
 }
+
+
+
 body {
+
     background: $gradientBackground;
-    color: $letraTexto;
+
     h1 {
+
         font-family: 'Alfa Slab One', cursive;
+
         font-size: 100px;
+
         text-align: center;
+
+        color: $aquaTitulo;
     }
+
     h3 {
+
         font-family: 'Alfa Slab One', cursive;
+      
         font-size: 45px;
+      
         line-height: 65px;
+      
         text-align: center;
+      
+        color: $encabezadoCeleste;
     }
+    
     p {
+
         font-family: 'Bebas Neue', cursive;
+    
         font-size: 35px;
+    
         line-height: 60px;
+    
+        text-align: center;
+    
+        color: $letraTexto;
+    
     }
+
 }
 
+
+/*modificaciones en el css del nav-bar de bootstrap*/
 header {
+
     .navbar {
+        
         --bs-navbar-padding-x: 0;
+
         --bs-navbar-padding-y: 0;
+
         .container-fluid {
+            
             background: rgb(255, 255, 255);
+
             font-size: 40px;
+
             .navbar-brand {
+                
                 img {
+                
                     width: 300px;
+
                 }
+
             }
+
             .navbar-collapse {
+
                 flex-grow: initial;
+
                 justify-content: flex-end;
+
                 .navbar-nav {
+
                     margin: 20px;
+
                     .nav-item {
+
                         margin: 10px;
+
                         .nav-link {
+
                             color: $rosaGorillaz;
+
                             font-family: 'Rakkas', cursive;
+
                             font-size: 30px;
+
                             &:hover {
+
                                 background: $rosaGorillaz;
+
                                 color: rgb(255, 255, 255);
+
                             }
+
                         }
+
                     }
+
                 }
+
             }
+
         }
+
     }
+
 }
+
 
 
 footer {
+
     display: flex;
+
     background-color: rgb(255, 255, 255);
+
     margin-top: 50px;
+
     padding-top: 25px;
+
     justify-content: space-around;
+
     p {
+
         font-size: 20px;
+
         line-height: 35px;
+
         color: rgb(189, 126, 207);
+
         margin: 20px;
+
     }
+
     .pie {
+
         display: flex; 
+
         justify-content: space-around;
+
         margin-bottom: 0;
+
         list-style: none;
+
         font-family: 'Bebas Neue', cursive;
+
         font-size: 35px;
+
         li {
+
             padding: 20px;
+
             a {
+
                 font-size: 42.5px;
+
                 text-decoration: none;
+
                 color: $rosaGorillaz;
+
                 &:hover {
+
                     background: $rosaGorillaz;
+
                     color: rgb(255, 255, 255);
+
                 }
+
             }
+
         }
+
     }
+
 }
 
 
 
 /*media queries*/ 
 
-/*mobile*/
+/*tablet pequeña*/
 
 @media only screen and (max-width: 576px) {
 
 /*estilos generales*/
 
 footer {
+
     display: flex;
+
     flex-wrap: wrap;
+
     flex-direction: column;
+
     .legales{
+
         p {
+
             font-size: 25px;
+
             line-height: 30px;
+
             text-align: center;
+
         }
+
     }
+
     .pie {
+
         display: flex;
+
         justify-content: space-evenly;
+
         padding: 15px 0px;
+
         list-style: none;
+
         font-family: "Bebas Neue", cursive;
+
         font-size: 35px;
+
         flex-wrap: wrap;
+
     }
+
 }
 
 
@@ -153,40 +284,75 @@ footer {
 /*index*/
 
 main {
+
     .home {
+
         .home_text {
+
             margin: 15px 40px;
+
             p {
+
                 font-size: 40px;
+
             }
+
         }
+
         .home_img {
+
             width: 500px;
+
         }
+
     }
+
     .article_main {
+
         flex-direction: column;
+
         align-items: center;
+
         margin: 15px 40px;
+
         p {
+
             font-size: 40px;
+
         }
+
         img {
+
             width: 450px;
+
             padding-top: 10px;
+
         }
+
     }
+
     .presentation {
+
         margin: 35px;
+
     }
+
     .video_container {
+
         flex-direction: column;
+
         align-items: center;
+
         iframe {
+
             width: 90%;
+
             padding: 10px 0;
+
         }
+
     }
+
 }
 
 
@@ -194,41 +360,69 @@ main {
 /*funciones*/
 
 .carousel {
+
     .slide {
+
         .carousel-inner {
+
             width: 500px;
+
             height: 250px;
+
         }
+
     }
+
 }
 
 .tour_presentation {
+
     margin: 20px;
+
     .tour_title {
+
         margin: 10px;
+
     }
+
 }
 
 .row.row-cols-1.row-cols-md-3.mb-3.text-center {
+
     flex-direction: column;
+
     .col {
+
         width: 100%;
+
     }
+
 }
 
     
 
 /*galeria*/
+
 .gallery {
+
     .gallery_img {
+
         grid-template-columns: repeat(2 , 1fr);
+
         grid-template-rows: repeat(6 , 1fr);
+
         align-items: center;
+
         justify-content: center;
+
         img {
+
             width: 275px;
+
         }
+
     }
+
 }
 
 
@@ -236,52 +430,432 @@ main {
 /*discografia*/
 
 .discografia {
+
     .discografia_text {
+
         margin: 30px;
+
         h1 {
+
             font-size: 85px;
+
         }
+
     }
+
     .first_album {
+
         flex-direction: column;
+
         align-items: center;
+
         iframe {
+
             width: 100%;
+
             height: 340px;
+
         }
+
     }
-    
+
     .second_album {
+
         flex-direction: column;
+
         align-items: center;
+
         iframe {
+
             width: 100%;
+
             height: 340px;
+
         }
+
     }
     
     .third_album {
+
         flex-direction: column;
+
         align-items: center;
+
         iframe {
+
             width: 100%;
+
             height: 340px;
+
         }
+
     }
+
 }
 
 
 
 /*contacto*/
-    .form_area {
-        flex-direction: column;
-    }
 
+.contacto {
+    
+    img {
+        width: 480px;
+    }
+}
+.form_area {
+    
+    flex-direction: column;
+    
     .msg_area-1 {
+    
         display: none !important;
+    
+    }
+    
+    .msg_area-2 {
+    
+        display: block !important;
+    
     }
 
-    .msg_area-2 {
-       display: block !important;
+}}
+
+
+
+
+/*mobile*/
+
+@media only screen and (max-width: 480px) {
+
+    /*estilos generales*/
+    
+    
+    footer {
+    
+        display: flex;
+    
+        flex-wrap: wrap;
+    
+        flex-direction: column;
+    
+        .legales{
+    
+            p {
+    
+                font-size: 25px;
+    
+                line-height: 30px;
+    
+                text-align: center;
+    
+            }
+    
+        }
+    
+        .pie {
+    
+            display: flex;
+    
+            justify-content: space-evenly;
+    
+            padding: 15px 0px;
+    
+            list-style: none;
+    
+            font-family: "Bebas Neue", cursive;
+    
+            font-size: 35px;
+    
+            flex-wrap: wrap;
+    
+        }
+    
     }
+    
+    
+    
+    /*index*/
+    
+    main {
+    
+        .home {
+    
+            .home_text {
+    
+                margin: 15px 40px;
+
+                h1 {
+                    font-size: 80px;
+                }
+    
+                p {
+    
+                    font-size: 30px;
+    
+                }
+    
+            }
+    
+            .home_img {
+    
+                width: 430px;
+    
+            }
+    
+        }
+    
+        .article_main {
+    
+            flex-direction: column;
+    
+            align-items: center;
+    
+            margin: 15px 40px;
+    
+            p {
+    
+                font-size: 30px;
+    
+            }
+    
+            img {
+    
+                width: 350px;
+    
+                padding-top: 10px;
+    
+            }
+    
+        }
+    
+        .presentation {
+    
+            margin: 35px;
+            
+            p {
+                font-size: 30px;
+            }
+        }
+    
+        .video_container {
+    
+            flex-direction: column;
+    
+            align-items: center;
+    
+            iframe {
+    
+                width: 90%;
+    
+                padding: 10px 0;
+    
+            }
+    
+        }
+    
     }
+    
+    
+    
+    /*funciones*/
+    
+    .carousel {
+    
+        .slide {
+    
+            .carousel-inner {
+    
+                width: 430px;
+    
+                height: 240px;
+    
+            }
+    
+        }
+    
+    }
+    
+    .tour_presentation {
+    
+        margin: 20px;
+    
+        .tour_title {
+    
+            margin: 10px;
+
+            p {
+                font-size: 30px;
+            }
+    
+        }
+    
+    }
+    
+    .row.row-cols-1.row-cols-md-3.mb-3.text-center {
+    
+        flex-direction: column;
+    
+        .col {
+    
+            width: 100%;
+
+            p {
+                font-size: 30px;
+            }
+    
+        }
+    
+    }
+    
+        
+    
+    /*galeria*/
+    
+    .gallery {
+
+        h1 {
+            font-size: 80px;
+        }
+    
+        .gallery_img {
+    
+            display: flex;
+            flex-direction: column;
+    
+            img {
+    
+                width: 480px;
+    
+            }
+    
+        }
+    
+    }
+    
+    
+    
+    /*discografia*/
+    
+    .discografia {
+    
+        .discografia_text {
+    
+            margin: 25px 40px;
+    
+            h1 {
+    
+                font-size: 70px;
+    
+            }
+    
+        }
+    
+        .first_album {
+    
+            flex-direction: column;
+    
+            align-items: center;
+            
+            p {
+                font-size: 30px;
+            }
+    
+            iframe {
+    
+                width: 100%;
+    
+                height: 340px;
+    
+            }
+    
+        }
+    
+        .second_album {
+    
+            flex-direction: column;
+    
+            align-items: center;
+
+            p {
+                font-size: 30px;
+            }
+    
+            iframe {
+    
+                width: 100%;
+    
+                height: 340px;
+    
+            }
+    
+        }
+        
+        .third_album {
+    
+            flex-direction: column;
+    
+            align-items: center;
+    
+            p {
+                font-size: 30px;
+            }
+            
+            iframe {
+    
+                width: 100%;
+    
+                height: 340px;
+    
+            }
+    
+        }
+    
+    }
+    
+    
+    
+    /*contacto*/
+    
+    .contacto {
+        
+        margin: 15px 40px;
+
+        h1 {
+            font-size: 80px;
+        }
+
+        h3 {
+            font-size: 45px;
+        }
+        img {
+            width: 480px;
+        }
+    }
+
+    .form_area {
+        
+        flex-direction: column;
+        
+        .msg_area-1 {
+        
+            display: none !important;
+        
+        }
+        
+        .msg_area-2 {
+        
+            display: flex;
+        
+            textarea {
+
+                #msg {
+
+                    width: 290px;
+
+                }
+            }
+        }
+    
+    }
+}

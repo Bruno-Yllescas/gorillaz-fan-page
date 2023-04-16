@@ -1,65 +1,123 @@
 /*funciones con sass*/
 
+/*modificaciones al css del carousel de bootstrap*/
 .carousel {
+
     display: flex;
+
     flex-direction: column;
+
     align-items: center;
+
     padding: 25px;
+
     .slide {
+
         display: flex;
+
         justify-content: center;
+
         .carousel-inner {
+
             width: 98%;
+
             height: 550px;
+
         }
+
     }
+
 }
 
 .tour_presentation {
+
     display: flex;
+
     flex-direction: column;
+
     align-items: center;
+
     margin: 60px 50px;
+
     .tour_title {
+
         display: flex;
+
         flex-direction: column;
+
         align-items: center;
+
         padding: 10px;
+
         .tour_title_text {
+
             padding: 40px;
+
             border: 2px solid rgb(206, 159, 221);
+
         }
+
         p {
+
             margin: 30px 10px;
+
         }
+
     }
-    
+
 }
 
+/*modificaciones al css de las tarjetas de bootstrap*/
 .row.row-cols-1.row-cols-md-3.mb-3.text-center {
+
     display: flex;
+
     flex-direction: column;
+
     align-items: center;
+
     margin: 50px;
+
     h1 {
+
         font-size: 70px;
+
     }
+
     .col {
+
         width: 85%;
+
         margin: 30px 0px;
+
         padding-top: 30px;
+
         border-top: 2px solid rgba(230, 207, 241, 0.822);
+
         .card-header.py-3 {
+
             background: rgb(134, 126, 207);
+
         }
+
         .card-body {
+
             color: rgb(103, 58, 183);
+
             .btn-primary {
+
                 --bs-btn-bg: rgb(137, 72, 72);
+
                 &:hover {
+
                     background: rgb(209, 47, 47);
+
                 }
+
             }
+
         }
+
     }
+
 }

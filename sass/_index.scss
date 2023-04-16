@@ -1,51 +1,95 @@
 /*index con sass*/
 
 main {
+
     .home {
+
         display: flex;
+
         align-items: center;
+
         flex-direction: column-reverse;
+
         .home_text {
+
             display: flex;
+
             flex-direction: column;
+
             align-items: center;
+
             margin: 20px 50px;
+
         }
+
         .home_img {
+
             width: 900px;
+
             animation: ease-in animation 1.2s;   
+
         }   
+
     }
 
     @keyframes animation {
+
         0% {
+
             transform: scale(0);
+
         }
+
         100% {
+
             transform: scale(1);
+
         }
-    }animate__backInUp
+
+    }
 
     .article_main {
+
         display: flex;
+
         align-items: center;
+
         margin: 30px 50px;
+
         img {
+
             width: 400px;
+
             padding: 40px;
+
         }
+
     }
+
     .presentation {
+
         display: flex;
+
         flex-direction: column;
+
         align-items: center;
+
         margin: 25px;
+
         padding-top: 10px;
+
         border-top: 2px solid rgb(206, 159, 221);
+
     }
+
     .video_container {
+
         display: flex;
+
         justify-content: space-around;
+
         margin: 50px 0;
+
     }
+
 }

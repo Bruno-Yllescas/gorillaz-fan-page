@@ -1,73 +1,143 @@
 /*contacto*/
 
 main {
+
     .contacto {
+
         display: flex;
+
         flex-direction: column;
+
         align-items: center;
-        margin: 60px 50px;
+
+        margin: 60px 25px 0px 25px;
+
     }
+
     .formulario_container {
+
         .form_area {
+
             display: flex;
+
             background-color: rgba(113, 131, 233, 0.37);
+
             border-radius: 25px;
-            margin: 50px 25px;
+
+            margin: 0px 25px;
+
             padding: 1.9em;
+
             .msg_area-1 {
+
                 display: flex;
+
                 flex-direction: column;
+
                 order: 2;
+
                 & > textarea {
+
                     flex: 1;
+
                     min-width: 18em;
+
                     background: #fff;
+
                     color: #000000;
+
                     padding: 15px;
+
                     margin: 15px;
+
                 }
+
             }
+
             .details-area {
+
                 flex: 1;
+
                 order: 1;
+
                 margin-right: 2em;
+
                 input {
+
                     width: 95%;
+
                     background: #fff;
+
                     color: #000000;
+
                     border-radius: 20px;
+
                     padding: 1em;
+
                     margin-bottom: 1em;
+
                 }
+
                 .msg_area-2 {
+
                     display: none;
+
                     & > textarea {
+
                         flex: 1;
-                        min-width: 18em;
+
+                        min-width: 350px;
+
                         background: #fff;
+
                         color: #000000;
+
                         padding: 15px;
+
                         margin: 15px;
+
                     }
+
                 }
+
                 button {
+
                     background: rgb(204, 123, 108);
+
                     color: #fff;
+
                     width: 200px;
+
                     border: 0;
+
                     padding: 15px 50px;
+
                     border-radius: 40px;
+
                     text-transform: uppercase;
+
                     padding: 1em;
+
                     margin-bottom: 1em;
+
                 }                
+
             }
+
             label {
+
                 font-size: 30px;
+
                 color: #fff;
+
                 text-transform: uppercase;
+
                 line-height: 10px;
+
             }
+
         }
+
     }
+
 }
