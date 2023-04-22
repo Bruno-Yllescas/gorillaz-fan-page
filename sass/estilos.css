@@ -470,16 +470,19 @@ footer .pie li a:hover {
   }
 }
 /*mobile*/
-@media only screen and (max-width: 480px) {
+@media (min-width: 320px) and (max-width: 480px) {
   /*estilos generales*/
+  header .navbar .container-fluid .navbar-brand img {
+    width: 185px;
+  }
   footer {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
   }
   footer .legales p {
-    font-size: 25px;
-    line-height: 30px;
+    font-size: 20px;
+    line-height: 20px;
     text-align: center;
   }
   footer .pie {
@@ -488,39 +491,47 @@ footer .pie li a:hover {
     padding: 15px 0px;
     list-style: none;
     font-family: "Bebas Neue", cursive;
-    font-size: 35px;
     flex-wrap: wrap;
+  }
+  footer .pie li a {
+    font-size: 30px;
   }
   /*index*/
   main .home .home_text {
-    margin: 15px 40px;
+    margin: 15px;
   }
   main .home .home_text h1 {
-    font-size: 80px;
+    font-size: 65px;
   }
   main .home .home_text p {
-    font-size: 30px;
+    font-size: 25px;
+    line-height: 45px;
   }
   main .home .home_img {
-    width: 430px;
+    width: 80%;
   }
   main .article_main {
     flex-direction: column;
     align-items: center;
-    margin: 15px 40px;
+    margin: 25px;
   }
   main .article_main p {
-    font-size: 30px;
+    font-size: 25px;
+    line-height: 45px;
   }
   main .article_main img {
-    width: 350px;
+    width: 80%;
     padding-top: 10px;
   }
   main .presentation {
-    margin: 35px;
+    margin: 25px;
+  }
+  main .presentation h3 {
+    font-size: 40px;
   }
   main .presentation p {
-    font-size: 30px;
+    font-size: 25px;
+    line-height: 45px;
   }
   main .video_container {
     flex-direction: column;
@@ -528,30 +539,53 @@ footer .pie li a:hover {
   }
   main .video_container iframe {
     width: 90%;
-    padding: 10px 0;
+    padding: 50px 0;
   }
   /*funciones*/
+  .carousel h1 {
+    font-size: 65px;
+  }
   .carousel .slide .carousel-inner {
-    width: 430px;
-    height: 240px;
+    width: 120%;
+    height: 100%;
+  }
+  .carousel .slide button {
+    width: 10%;
   }
   .tour_presentation {
-    margin: 20px;
+    margin: 15px;
   }
   .tour_presentation .tour_title {
-    margin: 10px;
+    margin: 0px;
+  }
+  .tour_presentation .tour_title h3 {
+    font-size: 40px;
+    line-height: 55px;
   }
   .tour_presentation .tour_title p {
-    font-size: 30px;
+    font-size: 25px;
+    line-height: 45px;
+  }
+  .tour_presentation .tour_title .tour_title_text {
+    padding: 15px;
   }
   .row.row-cols-1.row-cols-md-3.mb-3.text-center {
     flex-direction: column;
+    margin: 10px;
   }
   .row.row-cols-1.row-cols-md-3.mb-3.text-center .col {
     width: 100%;
   }
   .row.row-cols-1.row-cols-md-3.mb-3.text-center .col p {
-    font-size: 30px;
+    font-size: 25px;
+    line-height: 45px;
+  }
+  .row.row-cols-1.row-cols-md-3.mb-3.text-center .col .card-body h1 {
+    font-size: 50px;
+  }
+  .row.row-cols-1.row-cols-md-3.mb-3.text-center .col .card-body ul {
+    font-size: 20px;
+    line-height: 45px;
   }
   /*galeria*/
   .gallery h1 {
