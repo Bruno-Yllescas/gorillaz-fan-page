@@ -40,7 +40,7 @@ main {
 
                     flex: 1;
 
-                    min-width: 18em;
+                    min-width: 100%;
 
                     background: #fff;
 
@@ -61,6 +61,14 @@ main {
                 order: 1;
 
                 margin-right: 2em;
+
+                label {
+
+                    font-size: 25px;
+        
+                    line-height: 50px;
+                    
+                }
 
                 input {
 
@@ -86,7 +94,7 @@ main {
 
                         flex: 1;
 
-                        min-width: 350px;
+                        min-width: 100%;
 
                         background: #fff;
 

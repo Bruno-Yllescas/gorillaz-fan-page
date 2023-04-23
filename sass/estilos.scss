@@ -535,7 +535,7 @@ main {
         .navbar {
 
             .container-fluid {
-    
+
                 .navbar-brand {
         
                     img {
@@ -804,19 +804,33 @@ main {
     
     .gallery {
 
-        h1 {
-            font-size: 80px;
+        .gallery_text {
+
+            margin: 30px 10px;
+
+            h1 {
+            font-size: 65px;
+            }
+        
+            h3 {
+
+            font-size: 40px;
+            }
+        
         }
-    
+
         .gallery_img {
     
             display: flex;
+
             flex-direction: column;
-    
+
             img {
     
-                width: 480px;
-    
+                width: 80%;
+                
+                padding: 10px;
+
             }
     
         }
@@ -831,74 +845,49 @@ main {
     
         .discografia_text {
     
-            margin: 25px 40px;
+            margin: 25px;
+
+            padding: 0px;
     
             h1 {
     
-                font-size: 70px;
+                font-size: 40px;
     
+            }
+
+            h3 {
+
+                font-size: 25px;
+
+                line-height: 40px;
             }
     
         }
-    
-        .first_album {
-    
-            flex-direction: column;
-    
-            align-items: center;
-            
-            p {
-                font-size: 30px;
-            }
-    
-            iframe {
-    
-                width: 100%;
-    
-                height: 340px;
-    
-            }
-    
-        }
-    
-        .second_album {
-    
-            flex-direction: column;
-    
-            align-items: center;
+
+        .discografia_banner {
+
+            margin: 0px;
+
+            padding: 0px;
 
             p {
-                font-size: 30px;
-            }
-    
-            iframe {
-    
-                width: 100%;
-    
-                height: 340px;
-    
-            }
-    
-        }
         
-        .third_album {
-    
-            flex-direction: column;
-    
-            align-items: center;
-    
-            p {
-                font-size: 30px;
+                font-size: 20px;
+
+                line-height: 40px;
+
             }
-            
+
             iframe {
+
+                padding: 0px;
     
                 width: 100%;
     
                 height: 340px;
     
             }
-    
+        
         }
     
     }
@@ -909,22 +898,37 @@ main {
     
     .contacto {
         
-        margin: 15px 40px;
+        margin: 25px;
 
         h1 {
-            font-size: 80px;
+            font-size: 55px;
         }
 
         h3 {
-            font-size: 45px;
+            font-size:30px;
         }
         img {
-            width: 430px;
+            width: 80%;
         }
     }
 
+    .formulario_container {
+
+        margin: 0px;
+
+        padding: 0px;
+
+        p {
+    
+            font-size: 25px;
+
+            line-height: 45px;
+
+        }
+
+    }
     .form_area {
-        
+
         flex-direction: column;
         
         .msg_area-1 {
@@ -936,8 +940,14 @@ main {
         .msg_area-2 {
         
             display: flex;
-        
+
             textarea {
+
+                width: 125%;
+
+                margin: 0px;
+
+                padding: 0px;
 
                 #msg {
 
