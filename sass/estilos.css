@@ -658,10 +658,6 @@ footer .pie li a:hover {
   .form_area {
     flex-direction: column;
   }
-  .form_area label {
-    font-size: 25px;
-    line-height: 50px;
-  }
   .form_area .msg_area-1 {
     display: none !important;
   }
@@ -669,11 +665,11 @@ footer .pie li a:hover {
     display: flex;
   }
   .form_area .msg_area-2 textarea {
-    width: 125%;
+    width: 100%;
     margin: 0px;
     padding: 0px;
   }
   .form_area .msg_area-2 textarea #msg {
-    width: 290px;
+    width: 100%;
   }
 }/*# sourceMappingURL=estilos.css.map */
